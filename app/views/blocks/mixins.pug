@@ -1,0 +1,109 @@
+mixin menuLink(title, href)
+ li.header-menu-item
+    a.header-menu-link(href= href)= title
+
+mixin header-bottom(number, title)
+  .header-bottom-item
+    span.header-bottom-number= number
+    span.header-bottom-text=title
+
+mixin blockBoot(caption , title , desc)
+  .block-boot
+    h3.block-boot-caption= caption
+    h2.block-boot-heading= title
+    if desc
+      p.block-boot-desc= desc
+
+mixin  aboutItem(src , iconclass, title, alt= "")
+   .about-item
+      img.about-image(src= src alt= alt )
+      .about-content
+        i.about-icon(class= iconclass)
+        span.about-title= title
+
+mixin listNumber(number, text)
+  .number-item
+    h4.number-item-count= number
+    span.number-item-text= text
+
+
+mixin serviceItem(src, title, description)
+  .service-list-item
+    .service-list-item-icon
+      img(src=src)
+    .service-list-item-content
+      .service-list-item-content-title= title
+      .service-list-item-content-description= description
+
+mixin wedoContent(src, title, detail, active = "")
+  .wedo-item(class= active)
+    .wedo-item-header
+      img(src=src).wedo-item-icon
+      h3.wedo-item-title= title
+      i.fal.fa-angle-down.wedo-item-arrow
+    .wedo-item-content
+      .wedo-item-text= detail
+
+mixin team(src, name, desc)
+  .team-item
+    .team-main
+      img(src= src)
+      .team-content
+        ul.team-sosial
+          li.team-sosial-item
+            a.team-sosial-link(href="#")
+              i.fab.fa-facebook-f
+          li.team-sosial-item
+            a.team-sosial-link(href="#")
+              i.fab.fa-twitter
+          li.team-sosial-item
+            a.team-sosial-link(href="#")
+              i.fab.fa-pinterest
+          li.team-sosial-item
+            a.team-sosial-link(href="#")
+              i.fab.fa-instagram
+    .team-info
+      h3.team-info-name= name
+      span.team-info-desc= desc
+
+mixin story(src, number, text, title, desc)
+  li.story-list-item
+    .story-media
+      img.story-image(src= src)
+      .story-date
+        span.story-date-number= number
+        span.story-date-text= text
+      h3.story-title= title
+      span.story-desc= desc
+    hr.story-hr
+    .story-meta
+      .story-meta-item
+        i.fa.fa-eye.story-meta-icon
+        span.story-meta-number 542
+      .story-meta-item
+        i.fa.fa-comment.story-meta-icon
+        span.story-meta-number 542
+
+mixin quoteItem(src = "../images/img-quote.png", type = false, desc = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. hi hi hi Suscipit debitis sint, consequuntur nostrum commodi, similique ullam accusamus fugiat hic ad nulla asperiores velit molestias nihil ducimus alias cum consequatur. Necessitatibus?", author = "Jon Doe" )
+  .quote-item
+    if type == false
+      .quote-icon
+        img(src= src)
+    else
+      .quote-image
+        img(src= src)
+    .quote-info
+      p.quote-desc= desc
+      span.quote-author= author
+
+
+
+
+
+
+
+
+
+
+
+

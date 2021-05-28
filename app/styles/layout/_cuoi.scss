@@ -1,0 +1,106 @@
+.footer {
+  margin-top: 7.5rem;
+  &-top {
+    display: grid;
+    grid-template-columns: 40% 31% 1fr; // 43% 35% 22%
+    grid-gap: 30px;
+    border-bottom: 1px solid $gray-dark-color;
+    padding-bottom: 7rem;
+  }
+  &-heading {
+    font-size: 1.4rem;
+    font-family: $primary-font;
+    font-weight: 600;
+    padding-bottom: 4rem;
+    &-logo {
+      font-size: 4.7rem;
+      opacity: 0.3;
+      font-weight: bold;
+    }
+  }
+  &-desc {
+    line-height: 1.5;
+    justify-content: center;
+    opacity: 0.5;
+    padding-bottom: 5rem;
+  }
+  &-fl {
+    padding-bottom: 1.7rem;
+    font-weight: 500;
+    border-bottom: 1px solid $text-color;
+    strong {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+  }
+  &-social {
+    margin-top: 1.7rem;
+    padding-bottom: 3.9rem;
+    display: flex;
+    font-size: 1.5rem;
+    &-list {
+      i {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  &-form {
+    &-input {
+      width: 23rem;
+      height: 4rem;
+      opacity: 0.5;
+    }
+    &-button {
+      width: 15rem;
+      height: 4rem;
+      text-transform: uppercase;
+      color: $gray-light-color;
+      background-color: $third-color;
+      border: 0;
+      margin-left: -4px;
+    }
+  }
+  &-blog {
+    display: flex;
+    &-info {
+      margin-bottom: 3rem;
+    }
+    &-title {
+      padding: 2rem 0 1.1rem 2rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      line-height: 1.5;
+      font-family: $primary-font;
+      font-weight: 600;
+    }
+    &-date {
+      padding: 2rem 0 1.1rem 2rem;
+      opacity: 0.5;
+    }
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+    &-item-img {
+      max-width: 8.8rem;
+      max-height: 8.8rem;
+    }
+  }
+  &-view {
+    margin-top: 2rem;
+    display: block;
+  }
+  &-bottom {
+    padding: 2.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    span {
+      color: $primary-color;
+      margin-left: 3px;
+    }
+  }
+}
